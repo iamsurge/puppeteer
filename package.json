@@ -1,0 +1,12 @@
+{
+    "name": "scripts",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+        "maintain": "node index.js"
+    },
+    "dependencies": {
+        "puppeteer": "^18.2.1"
+    }
+}
