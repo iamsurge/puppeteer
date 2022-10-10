@@ -1,12 +1,16 @@
 {
-    "name": "scripts",
-    "version": "1.0.0",
-    "main": "index.js",
-    "license": "MIT",
-    "scripts": {
-        "maintain": "node index.js"
-    },
-    "dependencies": {
-        "puppeteer": "^18.2.1"
-    }
+  "name": "tojoeleeofficial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "puppeteer": "^18.2.1",
+    "puppeteer-core": "^18.2.1"
+  }
 }
