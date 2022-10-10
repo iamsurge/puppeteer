@@ -1,4 +1,5 @@
 const puppeteer = require('puppeteer');
+const { readFileSync, writeFileSync } = require("fs")
 
 async function browser(url) {
     const browser = await puppeteer.launch()
@@ -12,4 +13,6 @@ async function browser(url) {
   return page.content();
 }
 
-console.log(browser("https://joelee.works"))
+const data = browser("https://joelee.works");
+writeFileSync("/output.txt", data);
+console.log(data);
