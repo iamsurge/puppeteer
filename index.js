@@ -1,10 +1,15 @@
 const puppeteer = require('puppeteer');
 
-(async () => {
-  const browser = await puppeteer.launch();
-  const page = await browser.newPage();
-  await page.goto('https://joelee.works');
-  await page.screenshot({path: 'screenshot.png'});
-  console.log(page)
-  await browser.close();
-})();
+async function browser(url) {
+    const browser = await puppeteer.launch()
+    const page = await browser.newPage()
+
+    await page.goto(url)
+
+    await page.screenshot({path: 'screenshot.png'});
+    await browser.close();
+  
+  return page.content();
+}
+
+console.log(browser("https://joelee.works"))
