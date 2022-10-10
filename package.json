@@ -7,7 +7,7 @@
         "run": "node index.js"
     },
     "dependencies": {
-        "node-fetch": "^2.6.1",
-        "puppeteer": "^8.0.0"
+        "node-fetch": "^2.6.7",
+        "puppeteer": "^18.2.1"
     }
 }
